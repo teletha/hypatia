@@ -24,7 +24,7 @@ const root = {
 				"#": "java.util.Collections$UnmodifiableSet",},
 			"name": "Orientational",
 			"packageName": "hypatia",
-			"type": "Functional"
+			"type": "Interface"
 		},
 		{
 			"modifiers": {
