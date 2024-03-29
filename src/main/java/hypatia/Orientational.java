@@ -9,13 +9,7 @@
  */
 package hypatia;
 
-public interface Orientational<T extends Orientational> {
-
-    /** Reusable {@link Orientational}. */
-    Orientational POSITIVE = () -> true;
-
-    /** Reusable {@link Orientational}. */
-    Orientational NEGATIVE = () -> false;
+public interface Orientational<E extends Orientational> {
 
     /**
      * Detect the orientation.
@@ -34,15 +28,11 @@ public interface Orientational<T extends Orientational> {
     }
 
     /**
-     * Inverse the orientation.
+     * Get the entity.
      * 
      * @return
      */
-    default Orientational reverse() {
-        return isPositive() ? NEGATIVE : POSITIVE;
-    }
-
-    default T orientation() {
-        return (T) this;
+    default E orientation() {
+        return (E) this;
     }
 }

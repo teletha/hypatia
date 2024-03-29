@@ -1036,7 +1036,7 @@ public class Num extends Arithmetic<Num> {
      * @return
      */
     public static Num max(Num... decimals) {
-        return max(Orientational.POSITIVE, decimals);
+        return max(null, decimals);
     }
 
     /**
@@ -1076,7 +1076,7 @@ public class Num extends Arithmetic<Num> {
      * @return
      */
     public static Num min(Num... decimals) {
-        return min(Orientational.POSITIVE, decimals);
+        return min(null, decimals);
     }
 
     /**

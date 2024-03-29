@@ -17,6 +17,12 @@ import kiss.Variable;
 
 public class ArithmeticTestSupport {
 
+    /** Reusable {@link Orientational}. */
+    protected static final Orientational POSITIVE = () -> true;
+
+    /** Reusable {@link Orientational}. */
+    protected static final Orientational NEGATIVE = () -> false;
+
     /**
      * Convert to {@link BigDecimal}.
      * 

@@ -178,7 +178,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @param size A increase size.
      */
     public final Self plus(Orientational direction, Variable<Self> size) {
-        return direction.isPositive() ? plus(size) : minus(size);
+        return direction == null || direction.isPositive() ? plus(size) : minus(size);
     }
 
     /**
@@ -188,7 +188,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @param size A increase size.
      */
     public final Self plus(Orientational direction, Self size) {
-        return direction.isPositive() ? plus(size) : minus(size);
+        return direction == null || direction.isPositive() ? plus(size) : minus(size);
     }
 
     /**
@@ -308,7 +308,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @param size A decrease size.
      */
     public final Self minus(Orientational direction, Variable<Self> size) {
-        return direction.isNegative() ? plus(size) : minus(size);
+        return direction == null || direction.isPositive() ? minus(size) : plus(size);
     }
 
     /**
@@ -318,7 +318,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @param size A decrease size.
      */
     public final Self minus(Orientational direction, Self size) {
-        return direction.isNegative() ? plus(size) : minus(size);
+        return direction == null || direction.isPositive() ? minus(size) : plus(size);
     }
 
     /**
@@ -373,7 +373,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return A difference value.
      */
     public final Self diff(Orientational direction, Self target) {
-        return direction.isNegative() ? (Self) target.minus(this) : minus(target);
+        return direction == null || direction.isPositive() ? minus(target) : (Self) target.minus(this);
     }
 
     /**
@@ -897,7 +897,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, int other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -907,7 +907,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, long other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -917,7 +917,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, double other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -927,7 +927,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, String other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -937,7 +937,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, Variable<Self> other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -947,7 +947,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than the specified value, false otherwise
      */
     public final boolean isGreaterThan(Orientational direction, Self other) {
-        return direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
+        return direction == null || direction.isPositive() ? isGreaterThan(other) : isLessThan(other);
     }
 
     /**
@@ -1017,7 +1017,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, int other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1027,7 +1027,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, long other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1037,7 +1037,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, double other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1047,7 +1047,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, String other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1057,7 +1057,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, Variable<Self> other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1067,7 +1067,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is greater than or equal to the specified value, false otherwise
      */
     public final boolean isGreaterThanOrEqual(Orientational direction, Self other) {
-        return direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isGreaterThanOrEqual(other) : isLessThanOrEqual(other);
     }
 
     /**
@@ -1137,7 +1137,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than the specified value, false otherwise
      */
     public final boolean isLessThan(Orientational direction, int other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1147,7 +1147,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than the specified value, false otherwise
      */
     public final boolean isLessThan(Orientational direction, long other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1157,7 +1157,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than the specified value, false otherwise
      */
     public final boolean isLessThan(Orientational direction, double other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1167,7 +1167,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than the specified value, false otherwise
      */
     public final boolean isLessThan(Orientational direction, String other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1178,7 +1178,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return
      */
     public final boolean isLessThan(Orientational direction, Variable<Self> other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1188,7 +1188,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than the specified value, false otherwise
      */
     public final boolean isLessThan(Orientational direction, Self other) {
-        return direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
+        return direction == null || direction.isPositive() ? isLessThan(other) : isGreaterThan(other);
     }
 
     /**
@@ -1258,7 +1258,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, int other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1268,7 +1268,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, long other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1278,7 +1278,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, double other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1288,7 +1288,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, String other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1298,7 +1298,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, Variable<Self> other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1308,7 +1308,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @return true is this is less than or equal to the specified value, false otherwise
      */
     public final boolean isLessThanOrEqual(Orientational direction, Self other) {
-        return direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
+        return direction == null || direction.isPositive() ? isLessThanOrEqual(other) : isGreaterThanOrEqual(other);
     }
 
     /**
@@ -1595,7 +1595,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      *             operation would require rounding.
      */
     public final Self scale(Orientational mode, int size) {
-        return scale(size, mode.isPositive() ? RoundingMode.CEILING : RoundingMode.FLOOR);
+        return scale(size, mode == null || mode.isPositive() ? RoundingMode.CEILING : RoundingMode.FLOOR);
     }
 
     /**

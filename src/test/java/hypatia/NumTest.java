@@ -9,6 +9,7 @@
  */
 package hypatia;
 
+import static hypatia.ArithmeticTestSupport.*;
 import static hypatia.Num.*;
 
 import java.math.RoundingMode;
@@ -74,9 +75,9 @@ class NumTest {
 
     @Test
     void maxOnSell() {
-        assert Num.max(Orientational.NEGATIVE, ONE).is(1);
-        assert Num.max(Orientational.NEGATIVE, ONE, TWO, TEN).is(1);
-        assert Num.max(Orientational.NEGATIVE, ONE, TWO, of(-10)).is(-10);
+        assert Num.max(NEGATIVE, ONE).is(1);
+        assert Num.max(NEGATIVE, ONE, TWO, TEN).is(1);
+        assert Num.max(NEGATIVE, ONE, TWO, of(-10)).is(-10);
     }
 
     @Test
@@ -93,9 +94,9 @@ class NumTest {
 
     @Test
     void minOnSell() {
-        assert Num.min(Orientational.NEGATIVE, ONE).is(1);
-        assert Num.min(Orientational.NEGATIVE, ONE, TWO, TEN).is(10);
-        assert Num.min(Orientational.NEGATIVE, ONE, TWO, of(-10)).is(2);
+        assert Num.min(NEGATIVE, ONE).is(1);
+        assert Num.min(NEGATIVE, ONE, TWO, TEN).is(10);
+        assert Num.min(NEGATIVE, ONE, TWO, of(-10)).is(2);
     }
 
     @Test

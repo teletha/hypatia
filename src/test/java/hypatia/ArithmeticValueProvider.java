@@ -50,7 +50,7 @@ class ArithmeticValueProvider implements ArgumentsProvider {
             } else if (parameterType == Variable.class) {
                 parameters.add(Stream.of(annotation.strings()).map(Num::of).map(Variable::of).collect(Collectors.toSet()));
             } else if (parameterType == Orientational.class) {
-                parameters.add(Set.of(Orientational.POSITIVE, Orientational.NEGATIVE));
+                parameters.add(Set.of(ArithmeticTestSupport.POSITIVE, ArithmeticTestSupport.NEGATIVE));
             }
         }
         return Sets.cartesianProduct(parameters).stream().map(List::toArray).map(Arguments::arguments);
