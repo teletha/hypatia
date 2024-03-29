@@ -12,7 +12,7 @@ import static bee.api.License.*;
 
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "hypatia", "1.0");
+        product("com.github.teletha", "hypatia", ref("version.txt"));
         license(MIT);
         versionControlSystem("https://github.com/teletha/hypatia");
 

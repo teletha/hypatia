@@ -9,7 +9,7 @@
  */
 package hypatia;
 
-public interface Orientational {
+public interface Orientational<T extends Orientational> {
 
     /** Reusable {@link Orientational}. */
     Orientational POSITIVE = () -> true;
@@ -40,5 +40,9 @@ public interface Orientational {
      */
     default Orientational reverse() {
         return isPositive() ? NEGATIVE : POSITIVE;
+    }
+
+    default T orientation() {
+        return (T) this;
     }
 }
