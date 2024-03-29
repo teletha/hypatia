@@ -16,7 +16,9 @@ public interface Orientational<E extends Orientational> {
      * 
      * @return
      */
-    boolean isPositive();
+    default boolean isPositive() {
+        return orientation().isPositive();
+    }
 
     /**
      * Detect the orientation.

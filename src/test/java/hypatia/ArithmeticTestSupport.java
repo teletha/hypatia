@@ -18,10 +18,20 @@ import kiss.Variable;
 public class ArithmeticTestSupport {
 
     /** Reusable {@link Orientational}. */
-    protected static final Orientational POSITIVE = () -> true;
+    protected static final Orientational POSITIVE = new Orientational() {
+        @Override
+        public boolean isPositive() {
+            return true;
+        };
+    };
 
     /** Reusable {@link Orientational}. */
-    protected static final Orientational NEGATIVE = () -> false;
+    protected static final Orientational NEGATIVE = new Orientational() {
+        @Override
+        public boolean isPositive() {
+            return false;
+        };
+    };
 
     /**
      * Convert to {@link BigDecimal}.
