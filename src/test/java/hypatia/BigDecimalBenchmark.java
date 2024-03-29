@@ -12,19 +12,14 @@ package hypatia;
 import org.decimal4j.immutable.Decimal8f;
 
 import antibug.profiler.Benchmark;
-import hypatia.Num;
 
 public class BigDecimalBenchmark {
 
     public static void main(String[] args) {
-        Benchmark benchmark = new Benchmark();
+        Benchmark benchmark = new Benchmark().visualize();
 
         benchmark.measure("Num", () -> {
-            return hypatia.Num.of(1000)
-                    .divide(hypatia.Num.of(4))
-                    .plus(hypatia.Num.of(0.123))
-                    .multiply(hypatia.Num.of(-24.5))
-                    .pow(2);
+            return hypatia.Num.of(1000).divide(hypatia.Num.of(4)).plus(hypatia.Num.of(0.123)).multiply(hypatia.Num.of(-24.5)).pow(2);
         });
 
         benchmark.measure("Num#calculate", () -> {
@@ -42,10 +37,10 @@ public class BigDecimalBenchmark {
                     .pow(2);
         });
 
-        benchmark.measure("Java Primitive", () -> {
-            double v = (1000 / 4 + 0.123) * -24.5;
-            return v * v;
-        });
+        // benchmark.measure("Java Primitive", () -> {
+        // double v = (1000 / 4 + 0.123) * -24.5;
+        // return v * v;
+        // });
 
         benchmark.measure("Java BigDecimal", () -> {
             return java.math.BigDecimal.valueOf(1000)
