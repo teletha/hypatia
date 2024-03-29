@@ -8,11 +8,21 @@
 
 
 ## Summary
+Hypatia is a library for floating-point arithmetic that can handle unchangeable, arbitrary-precision signed decimal numbers.
 
+The Num class has two internal representations of numbers, one is a fast fixed-point operation based on long. The other is an arbitrary-precision floating-point operation using BigDecimal.
+However, the internal representation is completely hidden and the user need not be aware of it.
 <p align="right"><a href="#top">back to top</a></p>
 
 
 ## Usage
+Basic arithmetic operations.
+```java
+assert Num.of(1).plus(Num.of(2)).is(Num.of(3));
+assert Num.of(10).minus(1.553).is(8.447);
+assert Num.of(10.25).multiply(2).is(20.5);
+assert Num.of(13).divide(7).is(Num.of(1.85714285714285));
+```
 
 <p align="right"><a href="#top">back to top</a></p>
 

@@ -14,6 +14,12 @@ public class Project extends bee.api.Project {
     {
         product("com.github.teletha", "hypatia", ref("version.txt"));
         license(MIT);
+        describe("""
+                Hypatia is a library for floating-point arithmetic that can handle unchangeable, arbitrary-precision signed decimal numbers.
+
+                The Num class has two internal representations of numbers, one is a fast fixed-point operation based on long. The other is an arbitrary-precision floating-point operation using BigDecimal.
+                However, the internal representation is completely hidden and the user need not be aware of it.
+                """);
         versionControlSystem("https://github.com/teletha/hypatia");
 
         require("com.google.guava", "guava");
