@@ -26,6 +26,10 @@ assert Num.of(13).divide(7).is(Num.of(1.85714285714285));
 <p align="right"><a href="#top">back to top</a></p>
 
 
+## Benchmark
+### Decimal Calculation
+<img src="/benchmark/BigDecimalBenchmark.svg" width="700">
+<p align="right"><a href="#top">back to top</a></p>
 
 
 ## Prerequisites
