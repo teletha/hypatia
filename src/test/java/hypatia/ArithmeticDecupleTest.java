@@ -9,8 +9,6 @@
  */
 package hypatia;
 
-import hypatia.Num;
-
 class ArithmeticDecupleTest extends ArithmeticTestSupport {
 
     @ArithmeticTest

@@ -11,7 +11,6 @@ package hypatia;
 
 import java.math.BigDecimal;
 
-import hypatia.Num;
 import kiss.Variable;
 
 class ArithmeticIsTest extends ArithmeticTestSupport {

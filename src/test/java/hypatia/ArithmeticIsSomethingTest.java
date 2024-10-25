@@ -11,8 +11,6 @@ package hypatia;
 
 import java.math.BigDecimal;
 
-import hypatia.Num;
-
 class ArithmeticIsSomethingTest extends ArithmeticTestSupport {
 
     @ArithmeticTest

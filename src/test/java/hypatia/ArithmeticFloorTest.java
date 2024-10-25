@@ -12,8 +12,6 @@ package hypatia;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import hypatia.Num;
-
 class ArithmeticFloorTest extends ArithmeticTestSupport {
 
     @Test

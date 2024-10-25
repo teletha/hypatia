@@ -11,8 +11,6 @@ package hypatia;
 
 import org.junit.jupiter.api.Test;
 
-import hypatia.Primitives;
-
 class PrimitivesTest {
 
     @Test

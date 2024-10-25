@@ -11,8 +11,6 @@ package hypatia;
 
 import org.junit.jupiter.api.Assertions;
 
-import hypatia.Num;
-
 class ArithmeticSqrtTest extends ArithmeticTestSupport {
 
     @ArithmeticTest

@@ -11,7 +11,6 @@ package hypatia;
 
 import org.junit.jupiter.api.Assertions;
 
-import hypatia.Num;
 import kiss.Variable;
 
 class ArithmeticQuotientTest extends ArithmeticTestSupport {

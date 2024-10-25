@@ -9,7 +9,6 @@
  */
 package hypatia;
 
-import hypatia.Num;
 import kiss.Variable;
 
 class ArithmeticCompareToTest extends ArithmeticTestSupport {
