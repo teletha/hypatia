@@ -74,7 +74,13 @@ However, the internal representation is completely hidden and the user need not 
 		<system>github</system>
 		<url>https://github.com/teletha/hypatia/issues</url>
 	</issueManagement>
-	<developers/>
+	<developers>
+		<developer>
+			<name>teletha</name>
+			<email/>
+			<url>https://github.com/teletha</url>
+		</developer>
+	</developers>
 	<build>
 		<plugins>
 			<plugin>
