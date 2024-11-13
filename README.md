@@ -125,7 +125,7 @@ Hypatia depends on the following products on runtime.
 * [jsr305-3.0.2](https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305/3.0.2)
 * [listenablefuture-9999.0-empty-to-avoid-conflict-with-guava](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava)
 * [primavera-1.1.0](https://mvnrepository.com/artifact/com.github.teletha/primavera/1.1.0)
-* [sinobu-4.2.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.2.0)
+* [sinobu-4.5.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.5.0)
 <p align="right"><a href="#top">back to top</a></p>
 
 
