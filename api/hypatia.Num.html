@@ -4,964 +4,972 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Hypatia and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Hypatia API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="L">
-		<header class="U">
-			<h1 class="O" date="2024-03-29" ver="1.1.0"><code>Hypatia</code></h1>
-			<nav class="i"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="q">
+		<header class="h" date="2024-03-29" ver="1.1.0">
+			<h1 class="e"><code>Hypatia</code></h1>
+			<nav class="i"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/hypatia/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/hypatia" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="Z" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/hypatia/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/hypatia" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="V"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="b">
-			<nav class="V">
-				<div></div>
-			</nav>
-			<article class="f" id="Article">
-				<section class="P"><code class="T">hypatia</code>
-					<h2 class="Class h"><code class="S">Num</code></h2>
-					<div class="W">
-						<ul class="C E">
-							<li><code><a href="api/hypatia.Arithmetic.html">Arithmetic</a><code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Number.html">Number</a></code></li>
-						</ul>
-						<ul class="C F">
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html">Comparable</a><code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code></li>
-							<li><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html">Serializable</a></code></li>
-						</ul>
-					</div><span class="B"><p>A signed real number with arbitrary precision that cannot be changed.</p></span></section>
-				<section class="P" id="ZERO">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">ZERO</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="ONE">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">ONE</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="TWO">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">TWO</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="THREE">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">THREE</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="FOUR">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">FOUR</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="TEN">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">TEN</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="HUNDRED">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">HUNDRED</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="MAX">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">MAX</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="MIN">
-					<h2 class="J"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="S">MIN</code><i class="e"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
-				<section class="P" id="Num(long,int)">
-					<h2 class="J"><i class="PROTECTED"></i><code class="S">Num</code><code class="N">(<code>long</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>long</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>int</code><code>scale</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Construct the number as a binary format with dynamic fixed precision.</p></span></section>
-				<section class="P" id="Num(java.math.BigDecimal)">
-					<h2 class="J"><i class="PROTECTED"></i><code class="S">Num</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Constructs the number as a signed decimal number with arbitrary precision.</p></span></section>
-				<section class="P" id="create(long)">
-					<h2 class="J"><i class="OVERRIDE PROTECTED"></i><code class="S">create</code><code class="N">(<code>long</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>long</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="create(double)">
-					<h2 class="J"><i class="OVERRIDE PROTECTED"></i><code class="S">create</code><code class="N">(<code>double</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>double</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="create(java.lang.String)">
-					<h2 class="J"><i class="OVERRIDE PROTECTED"></i><code class="S">create</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="create(java.math.BigDecimal)">
-					<h2 class="J"><i class="OVERRIDE PROTECTED"></i><code class="S">create</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="signum()">
-					<h2 class="J"><i class="OVERRIDE PROTECTED"></i><code class="S">signum</code><code class="N">()</code><i class="e"><code>int</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="plus(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">plus</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="minus(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">minus</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="multiply(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">multiply</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="divide(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">divide</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="remainder(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">remainder</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="quotient(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">quotient</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="calculate(int,hypatia.Num,java.util.function.DoubleBinaryOperator)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">calculate</code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">calculation</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>maxScale</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param1</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code>calculation</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="calculate(int,hypatia.Num,hypatia.Num,primavera.function.DoubleTriFunction)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">calculate</code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code>primavera.function.DoubleTriFunction</code><code class="parameterName">calculation</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>maxScale</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param1</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param2</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>primavera.function.DoubleTriFunction</code><code>calculation</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoubleTetraFunction)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">calculate</code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code>primavera.function.DoubleTetraFunction</code><code class="parameterName">calculation</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>maxScale</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param1</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param2</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param3</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>primavera.function.DoubleTetraFunction</code><code>calculation</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoublePentaFunction)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">calculate</code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param4</code>, <code>primavera.function.DoublePentaFunction</code><code class="parameterName">calculation</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>maxScale</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param1</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param2</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param3</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>param4</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>primavera.function.DoublePentaFunction</code><code>calculation</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="abs()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">abs</code><code class="N">()</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="compareTo(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">compareTo</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">o</code>)</code><i class="e"><code>int</code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>o</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="ceiling(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">ceiling</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>base</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="floor(hypatia.Num)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">floor</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>base</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="decuple(int)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">decuple</code><code class="N">(<code>int</code><code class="parameterName">n</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>n</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="negate()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">negate</code><code class="N">()</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="pow(int)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">pow</code><code class="N">(<code>int</code><code class="parameterName">n</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>n</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="scale()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">scale</code><code class="N">()</code><i class="e"><code>int</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="scale(int,java.math.RoundingMode)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">scale</code><code class="N">(<code>int</code><code class="parameterName">size</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>size</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code>mode</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="sqrt()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">sqrt</code><code class="N">()</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="intValue()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">intValue</code><code class="N">()</code><i class="e"><code>int</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="longValue()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">longValue</code><code class="N">()</code><i class="e"><code>long</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>long</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="floatValue()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">floatValue</code><code class="N">()</code><i class="e"><code>float</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>float</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="doubleValue()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">doubleValue</code><code class="N">()</code><i class="e"><code>double</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>double</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="format(java.text.NumberFormat)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">format</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code class="parameterName">format</code>)</code><i class="e"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code>format</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="toString()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">toString</code><code class="N">()</code><i class="e"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="hashCode()">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">hashCode</code><code class="N">()</code><i class="e"><code>int</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>int</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="equals(java.lang.Object)">
-					<h2 class="J"><i class="OVERRIDE PUBLIC"></i><code class="S">equals</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">obj</code>)</code><i class="e"><code>boolean</code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code>obj</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="of(int)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code>int</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(int...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="e"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var">int</code><code>values</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(long)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code>long</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>long</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(long...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="e"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var">long</code><code>values</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(float)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code>float</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>float</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(float...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code array="var">float</code><code class="parameterName">values</code>)</code><i class="e"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var">float</code><code>values</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(double)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code>double</code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>double</code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(double...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code array="var">double</code><code class="parameterName">values</code>)</code><i class="e"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var">double</code><code>values</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(java.lang.String)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(java.lang.String...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code array="var"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">values</code>)</code><i class="e"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code>values</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Convert to <code><a href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
-				<section class="P" id="of(java.math.BigDecimal)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">of</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code>value</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="max(hypatia.Num...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">max</code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var"><a href="api/hypatia.Num.html">Num</a></code><code>decimals</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect max value.</p></span></section>
-				<section class="P" id="max(hypatia.Orientational,hypatia.Num...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">max</code><code class="N">(<code><a href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Orientational.html">Orientational</a></code><code>direction</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code array="var"><a href="api/hypatia.Num.html">Num</a></code><code>decimals</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect max value.</p></span></section>
-				<section class="P" id="min(kiss.Variable,hypatia.Num)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">min</code><code class="N">(<code>kiss.Variable<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">one</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">other</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>kiss.Variable<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code>one</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>other</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect min value.</p></span></section>
-				<section class="P" id="min(hypatia.Num...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">min</code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var"><a href="api/hypatia.Num.html">Num</a></code><code>decimals</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect min value.</p></span></section>
-				<section class="P" id="min(hypatia.Orientational,hypatia.Num...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">min</code><code class="N">(<code><a href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Orientational.html">Orientational</a></code><code>direction</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code array="var"><a href="api/hypatia.Num.html">Num</a></code><code>decimals</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect min value.</p></span></section>
-				<section class="P" id="within(hypatia.Num,hypatia.Num,hypatia.Num)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">within</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="e"><code>boolean</code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>min</code></td>
-							<td><span><p>A minimum value.</p></span></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td><span><p>A target value to check.</p></span></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>max</code></td>
-							<td><span><p>A maximum value.</p></span></td>
-						</tr>
-						<tr class="R">
-							<td><code>boolean</code></td>
-							<td><span><p>A target value in range.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Check the value range.</p></span></section>
-				<section class="P" id="between(hypatia.Num,hypatia.Num,hypatia.Num)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">between</code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>min</code></td>
-							<td><span><p>A minimum value.</p></span></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>value</code></td>
-							<td><span><p>A target value to check.</p></span></td>
-						</tr>
-						<tr class="d">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code><code>max</code></td>
-							<td><span><p>A maximum value.</p></span></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td><span><p>A target value in range.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Check the value range.</p></span></section>
-				<section class="P" id="range(int,int)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">range</code><code class="N">(<code>int</code><code class="parameterName">start</code>, <code>int</code><code class="parameterName">end</code>)</code><i class="e"><code>kiss.Signal<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>start</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>int</code><code>end</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code>kiss.Signal<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code></td>
-							<td></td>
-						</tr>
-					</table>
-				</section>
-				<section class="P" id="random()">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">random</code><code class="N">()</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td><span><p>A random number.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Create <code><a href="api/hypatia.Num.html">Num</a></code> with random number between <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#MIN_VALUE">Integer#MIN_VALUE</a></code> and
-<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#MAX_VALUE">Integer#MAX_VALUE</a></code>.</p></span></section>
-				<section class="P" id="random(int,int)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">random</code><code class="N">(<code>int</code><code class="parameterName">minInclusive</code>, <code>int</code><code class="parameterName">maxExclusive</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>int</code><code>minInclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>int</code><code>maxExclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td><span><p>A random number.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Create <code><a href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
-				<section class="P" id="random(long,long)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">random</code><code class="N">(<code>long</code><code class="parameterName">minInclusive</code>, <code>long</code><code class="parameterName">maxExclusive</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>long</code><code>minInclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>long</code><code>maxExclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td><span><p>A random number.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Create <code><a href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
-				<section class="P" id="random(double,double)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">random</code><code class="N">(<code>double</code><code class="parameterName">minInclusive</code>, <code>double</code><code class="parameterName">maxExclusive</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code>double</code><code>minInclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="d">
-							<td><code>double</code><code>maxExclusive</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td><span><p>A random number.</p></span></td>
-						</tr>
-					</table><span class="B"><p>Create <code><a href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
-				<section class="P" id="sum(hypatia.Num...)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">sum</code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">nums</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code array="var"><a href="api/hypatia.Num.html">Num</a></code><code>nums</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Calculate the sum of all numbers.</p></span></section>
-				<section class="P" id="sum(java.lang.Iterable)">
-					<h2 class="J"><i class="PUBLIC STATIC"></i><code class="S">sum</code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">nums</code>)</code><i class="e"><code><a href="api/hypatia.Num.html">Num</a></code></i></h2>
-					<table class="H">
-						<tr class="d">
-							<td><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code>nums</code></td>
-							<td></td>
-						</tr>
-						<tr class="R">
-							<td><code><a href="api/hypatia.Num.html">Num</a></code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Calculate the sum of all numbers.</p></span></section>
-			</article>
-			<aside class="I" id="SubNavi">
-				<div class="m">
-					<h5 class="j">Constructors</h5>
-					<ul>
-						<li><i class="PROTECTED"></i><code><a href="api/hypatia.Num.html#Num(long,int)">Num</a></code><code class="N">(<code>long</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code></li>
-						<li><i class="PROTECTED"></i><code><a href="api/hypatia.Num.html#Num(java.math.BigDecimal)">Num</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code></li>
+		<nav class="R"></nav>
+		<article class="N" id="Article">
+			<section class="s"><code class="O">hypatia</code>
+				<h2 class="Class I"><code class="j">Num</code></h2>
+				<div class="J">
+					<ul class="C E">
+						<li><code><a aria-label="hypatia.Arithmetic" href="api/hypatia.Arithmetic.html">Arithmetic</a><code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code></li>
+						<li><code><a aria-label="java.lang.Number 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Number.html">Number</a></code></li>
 					</ul>
-					<h5 class="j">Static Fields</h5>
-					<ul>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#ZERO">ZERO</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#ONE">ONE</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#TWO">TWO</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#THREE">THREE</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#FOUR">FOUR</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#TEN">TEN</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#HUNDRED">HUNDRED</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#MAX">MAX</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#MIN">MIN</a></code><i class="Y"><code class="return"><a href="api/hypatia.Num.html">Num</a></code></i></li>
+					<ul class="C F">
+						<li><code><a aria-label="java.lang.Comparable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html">Comparable</a><code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code></li>
+						<li><code><a aria-label="java.io.Serializable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html">Serializable</a></code></li>
 					</ul>
-					<h5 class="j">Static Methods</h5>
-					<ul>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(int)">of</a></code><code class="N">(<code>int</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(int...)">of</a></code><code class="N">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="Y"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(long)">of</a></code><code class="N">(<code>long</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(long...)">of</a></code><code class="N">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="Y"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(float)">of</a></code><code class="N">(<code>float</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(float...)">of</a></code><code class="N">(<code array="var">float</code><code class="parameterName">values</code>)</code><i class="Y"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(double)">of</a></code><code class="N">(<code>double</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(double...)">of</a></code><code class="N">(<code array="var">double</code><code class="parameterName">values</code>)</code><i class="Y"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.lang.String)">of</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.lang.String...)">of</a></code><code class="N">(<code array="var"><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">values</code>)</code><i class="Y"><code array="fix"><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.math.BigDecimal)">of</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#max(hypatia.Num...)">max</a></code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#max(hypatia.Orientational,hypatia.Num...)">max</a></code><code class="N">(<code><a href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(kiss.Variable,hypatia.Num)">min</a></code><code class="N">(<code>kiss.Variable<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">one</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">other</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(hypatia.Num...)">min</a></code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(hypatia.Orientational,hypatia.Num...)">min</a></code><code class="N">(<code><a href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#within(hypatia.Num,hypatia.Num,hypatia.Num)">within</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="Y"><code>boolean</code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#between(hypatia.Num,hypatia.Num,hypatia.Num)">between</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#range(int,int)">range</a></code><code class="N">(<code>int</code><code class="parameterName">start</code>, <code>int</code><code class="parameterName">end</code>)</code><i class="Y"><code>kiss.Signal<code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random()">random</a></code><code class="N">()</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(int,int)">random</a></code><code class="N">(<code>int</code><code class="parameterName">minInclusive</code>, <code>int</code><code class="parameterName">maxExclusive</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(long,long)">random</a></code><code class="N">(<code>long</code><code class="parameterName">minInclusive</code>, <code>long</code><code class="parameterName">maxExclusive</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(double,double)">random</a></code><code class="N">(<code>double</code><code class="parameterName">minInclusive</code>, <code>double</code><code class="parameterName">maxExclusive</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#sum(hypatia.Num...)">sum</a></code><code class="N">(<code array="var"><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">nums</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#sum(java.lang.Iterable)">sum</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">nums</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-					</ul>
-					<h5 class="j">Methods</h5>
-					<ul>
-						<li><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(long)">create</a></code><code class="N">(<code>long</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(double)">create</a></code><code class="N">(<code>double</code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(java.lang.String)">create</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(java.math.BigDecimal)">create</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#signum()">signum</a></code><code class="N">()</code><i class="Y"><code>int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#plus(hypatia.Num)">plus</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#minus(hypatia.Num)">minus</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#multiply(hypatia.Num)">multiply</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#divide(hypatia.Num)">divide</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#remainder(hypatia.Num)">remainder</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#quotient(hypatia.Num)">quotient</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,java.util.function.DoubleBinaryOperator)">calculate</a></code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">calculation</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,primavera.function.DoubleTriFunction)">calculate</a></code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code>primavera.function.DoubleTriFunction</code><code class="parameterName">calculation</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoubleTetraFunction)">calculate</a></code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code>primavera.function.DoubleTetraFunction</code><code class="parameterName">calculation</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoublePentaFunction)">calculate</a></code><code class="N">(<code>int</code><code class="parameterName">maxScale</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param4</code>, <code>primavera.function.DoublePentaFunction</code><code class="parameterName">calculation</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#abs()">abs</a></code><code class="N">()</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#compareTo(hypatia.Num)">compareTo</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">o</code>)</code><i class="Y"><code>int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#ceiling(hypatia.Num)">ceiling</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#floor(hypatia.Num)">floor</a></code><code class="N">(<code><a href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#decuple(int)">decuple</a></code><code class="N">(<code>int</code><code class="parameterName">n</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#negate()">negate</a></code><code class="N">()</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#pow(int)">pow</a></code><code class="N">(<code>int</code><code class="parameterName">n</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#scale()">scale</a></code><code class="N">()</code><i class="Y"><code>int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#scale(int,java.math.RoundingMode)">scale</a></code><code class="N">(<code>int</code><code class="parameterName">size</code>, <code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#sqrt()">sqrt</a></code><code class="N">()</code><i class="Y"><code><a href="api/hypatia.Num.html">Num</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#intValue()">intValue</a></code><code class="N">()</code><i class="Y"><code>int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#longValue()">longValue</a></code><code class="N">()</code><i class="Y"><code>long</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#floatValue()">floatValue</a></code><code class="N">()</code><i class="Y"><code>float</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#doubleValue()">doubleValue</a></code><code class="N">()</code><i class="Y"><code>double</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#format(java.text.NumberFormat)">format</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code class="parameterName">format</code>)</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#toString()">toString</a></code><code class="N">()</code><i class="Y"><code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#hashCode()">hashCode</a></code><code class="N">()</code><i class="Y"><code>int</code></i></li>
-						<li><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#equals(java.lang.Object)">equals</a></code><code class="N">(<code><a href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">obj</code>)</code><i class="Y"><code>boolean</code></i></li>
-					</ul>
-				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+				</div><span class="B"><p>A signed real number with arbitrary precision that cannot be changed.</p></span></section>
+			<section class="s" id="ZERO">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">ZERO</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="ONE">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">ONE</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="TWO">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">TWO</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="THREE">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">THREE</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="FOUR">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">FOUR</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="TEN">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">TEN</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="HUNDRED">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">HUNDRED</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="MAX">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">MAX</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="MIN">
+				<h2 class="f"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="j">MIN</code><i class="l"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2><span class="B"><p>reuse</p></span></section>
+			<section class="s" id="Num(long,int)">
+				<h2 class="f"><i class="PROTECTED"></i><code class="j">Num</code><code class="g">(<code>long</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>long</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">scale</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Construct the number as a binary format with dynamic fixed precision.</p></span></section>
+			<section class="s" id="Num(java.math.BigDecimal)">
+				<h2 class="f"><i class="PROTECTED"></i><code class="j">Num</code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Constructs the number as a signed decimal number with arbitrary precision.</p></span></section>
+			<section class="s" id="create(long)">
+				<h2 class="f"><i class="OVERRIDE PROTECTED"></i><code class="j">create</code><code class="g">(<code>long</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>long</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="create(double)">
+				<h2 class="f"><i class="OVERRIDE PROTECTED"></i><code class="j">create</code><code class="g">(<code>double</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>double</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="create(java.lang.String)">
+				<h2 class="f"><i class="OVERRIDE PROTECTED"></i><code class="j">create</code><code class="g">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="create(java.math.BigDecimal)">
+				<h2 class="f"><i class="OVERRIDE PROTECTED"></i><code class="j">create</code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="signum()">
+				<h2 class="f"><i class="OVERRIDE PROTECTED"></i><code class="j">signum</code><code class="g">()</code><i class="l"><code>int</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="plus(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">plus</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="minus(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">minus</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="multiply(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">multiply</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="divide(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">divide</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="remainder(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">remainder</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="quotient(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">quotient</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="calculate(int,hypatia.Num,java.util.function.DoubleBinaryOperator)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">calculate</code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">calculation</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">maxScale</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">calculation</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="calculate(int,hypatia.Num,hypatia.Num,primavera.function.DoubleTriFunction)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">calculate</code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code>primavera.function.DoubleTriFunction</code><code class="parameterName">calculation</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">maxScale</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>primavera.function.DoubleTriFunction</code><code class="parameterName">calculation</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoubleTetraFunction)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">calculate</code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code>primavera.function.DoubleTetraFunction</code><code class="parameterName">calculation</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">maxScale</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>primavera.function.DoubleTetraFunction</code><code class="parameterName">calculation</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoublePentaFunction)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">calculate</code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param4</code>, <code>primavera.function.DoublePentaFunction</code><code class="parameterName">calculation</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">maxScale</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param4</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>primavera.function.DoublePentaFunction</code><code class="parameterName">calculation</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="abs()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">abs</code><code class="g">()</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="compareTo(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">compareTo</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">o</code>)</code><i class="l"><code>int</code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">o</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="ceiling(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">ceiling</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="floor(hypatia.Num)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">floor</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="decuple(int)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">decuple</code><code class="g">(<code>int</code><code class="parameterName">n</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">n</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="negate()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">negate</code><code class="g">()</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="pow(int)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">pow</code><code class="g">(<code>int</code><code class="parameterName">n</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">n</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="scale()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">scale</code><code class="g">()</code><i class="l"><code>int</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="scale(int,java.math.RoundingMode)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">scale</code><code class="g">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">size</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="sqrt()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">sqrt</code><code class="g">()</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="intValue()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">intValue</code><code class="g">()</code><i class="l"><code>int</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="longValue()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">longValue</code><code class="g">()</code><i class="l"><code>long</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>long</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="floatValue()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">floatValue</code><code class="g">()</code><i class="l"><code>float</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>float</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="doubleValue()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">doubleValue</code><code class="g">()</code><i class="l"><code>double</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>double</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="format(java.text.NumberFormat)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">format</code><code class="g">(<code><a aria-label="java.text.NumberFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code class="parameterName">format</code>)</code><i class="l"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.text.NumberFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code class="parameterName">format</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="toString()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">toString</code><code class="g">()</code><i class="l"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="hashCode()">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">hashCode</code><code class="g">()</code><i class="l"><code>int</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>int</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="equals(java.lang.Object)">
+				<h2 class="f"><i class="OVERRIDE PUBLIC"></i><code class="j">equals</code><code class="g">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">obj</code>)</code><i class="l"><code>boolean</code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">obj</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="of(int)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code>int</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(int...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="l"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var">int</code><code class="parameterName">values</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(long)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code>long</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>long</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(long...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="l"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var">long</code><code class="parameterName">values</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(float)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code>float</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>float</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(float...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code array="var">float</code><code class="parameterName">values</code>)</code><i class="l"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var">float</code><code class="parameterName">values</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(double)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code>double</code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>double</code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(double...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code array="var">double</code><code class="parameterName">values</code>)</code><i class="l"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var">double</code><code class="parameterName">values</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(java.lang.String)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(java.lang.String...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code array="var"><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">values</code>)</code><i class="l"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var"><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">values</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Convert to <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code>.</p></span></section>
+			<section class="s" id="of(java.math.BigDecimal)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">of</code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="max(hypatia.Num...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">max</code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect max value.</p></span></section>
+			<section class="s" id="max(hypatia.Orientational,hypatia.Num...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">max</code><code class="g">(<code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect max value.</p></span></section>
+			<section class="s" id="min(kiss.Variable,hypatia.Num)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">min</code><code class="g">(<code>kiss.Variable<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">one</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">other</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>kiss.Variable<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">one</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">other</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect min value.</p></span></section>
+			<section class="s" id="min(hypatia.Num...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">min</code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect min value.</p></span></section>
+			<section class="s" id="min(hypatia.Orientational,hypatia.Num...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">min</code><code class="g">(<code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect min value.</p></span></section>
+			<section class="s" id="within(hypatia.Num,hypatia.Num,hypatia.Num)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">within</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="l"><code>boolean</code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code></td>
+						<td><span><p>A minimum value.</p></span></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td><span><p>A target value to check.</p></span></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code></td>
+						<td><span><p>A maximum value.</p></span></td>
+					</tr>
+					<tr class="m">
+						<td><code>boolean</code></td>
+						<td><span><p>A target value in range.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Check the value range.</p></span></section>
+			<section class="s" id="between(hypatia.Num,hypatia.Num,hypatia.Num)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">between</code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code></td>
+						<td><span><p>A minimum value.</p></span></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code></td>
+						<td><span><p>A target value to check.</p></span></td>
+					</tr>
+					<tr class="U">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code></td>
+						<td><span><p>A maximum value.</p></span></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td><span><p>A target value in range.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Check the value range.</p></span></section>
+			<section class="s" id="range(int,int)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">range</code><code class="g">(<code>int</code><code class="parameterName">start</code>, <code>int</code><code class="parameterName">end</code>)</code><i class="l"><code>kiss.Signal<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">start</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">end</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code>kiss.Signal<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code></td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section class="s" id="random()">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">random</code><code class="g">()</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td><span><p>A random number.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Create <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code> with random number between <code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#MIN_VALUE">Integer#MIN_VALUE</a></code> and
+<code><a aria-label="java.lang.Integer 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html#MAX_VALUE">Integer#MAX_VALUE</a></code>.</p></span></section>
+			<section class="s" id="random(int,int)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">random</code><code class="g">(<code>int</code><code class="parameterName">minInclusive</code>, <code>int</code><code class="parameterName">maxExclusive</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">minInclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>int</code><code class="parameterName">maxExclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td><span><p>A random number.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Create <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
+			<section class="s" id="random(long,long)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">random</code><code class="g">(<code>long</code><code class="parameterName">minInclusive</code>, <code>long</code><code class="parameterName">maxExclusive</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>long</code><code class="parameterName">minInclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>long</code><code class="parameterName">maxExclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td><span><p>A random number.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Create <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
+			<section class="s" id="random(double,double)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">random</code><code class="g">(<code>double</code><code class="parameterName">minInclusive</code>, <code>double</code><code class="parameterName">maxExclusive</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code>double</code><code class="parameterName">minInclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="U">
+						<td><code>double</code><code class="parameterName">maxExclusive</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td><span><p>A random number.</p></span></td>
+					</tr>
+				</table><span class="B"><p>Create <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code> with random number between min and max.</p></span></section>
+			<section class="s" id="sum(hypatia.Num...)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">sum</code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">nums</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">nums</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Calculate the sum of all numbers.</p></span></section>
+			<section class="s" id="sum(java.lang.Iterable)">
+				<h2 class="f"><i class="PUBLIC STATIC"></i><code class="j">sum</code><code class="g">(<code><a aria-label="java.lang.Iterable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">nums</code>)</code><i class="l"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></h2>
+				<table class="d">
+					<tr class="U">
+						<td><code><a aria-label="java.lang.Iterable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">nums</code></td>
+						<td></td>
+					</tr>
+					<tr class="m">
+						<td><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Calculate the sum of all numbers.</p></span></section>
+		</article>
+		<aside class="o">
+			<div class="c">
+				<h5 class="n">Constructors</h5>
+				<ul>
+					<li class="T"><i class="PROTECTED"></i><code><a href="api/hypatia.Num.html#Num(long,int)">Num</a></code><code class="g">(<code>long</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code></li>
+					<li class="T"><i class="PROTECTED"></i><code><a href="api/hypatia.Num.html#Num(java.math.BigDecimal)">Num</a></code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code></li>
+				</ul>
+				<h5 class="n">Static Fields</h5>
+				<ul>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#ZERO">ZERO</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#ONE">ONE</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#TWO">TWO</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#THREE">THREE</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#FOUR">FOUR</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#TEN">TEN</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#HUNDRED">HUNDRED</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#MAX">MAX</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Num.html#MIN">MIN</a></code><i class="L"><code class="return"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+				</ul>
+				<h5 class="n">Static Methods</h5>
+				<ul>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(int)">of</a></code><code class="g">(<code>int</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(int...)">of</a></code><code class="g">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="L"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(long)">of</a></code><code class="g">(<code>long</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(long...)">of</a></code><code class="g">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="L"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(float)">of</a></code><code class="g">(<code>float</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(float...)">of</a></code><code class="g">(<code array="var">float</code><code class="parameterName">values</code>)</code><i class="L"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(double)">of</a></code><code class="g">(<code>double</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(double...)">of</a></code><code class="g">(<code array="var">double</code><code class="parameterName">values</code>)</code><i class="L"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.lang.String)">of</a></code><code class="g">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.lang.String...)">of</a></code><code class="g">(<code array="var"><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">values</code>)</code><i class="L"><code array="fix"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#of(java.math.BigDecimal)">of</a></code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#max(hypatia.Num...)">max</a></code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#max(hypatia.Orientational,hypatia.Num...)">max</a></code><code class="g">(<code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(kiss.Variable,hypatia.Num)">min</a></code><code class="g">(<code>kiss.Variable<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">one</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">other</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(hypatia.Num...)">min</a></code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#min(hypatia.Orientational,hypatia.Num...)">min</a></code><code class="g">(<code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code><code class="parameterName">direction</code>, <code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">decimals</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#within(hypatia.Num,hypatia.Num,hypatia.Num)">within</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="L"><code>boolean</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#between(hypatia.Num,hypatia.Num,hypatia.Num)">between</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">min</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">max</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#range(int,int)">range</a></code><code class="g">(<code>int</code><code class="parameterName">start</code>, <code>int</code><code class="parameterName">end</code>)</code><i class="L"><code>kiss.Signal<code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random()">random</a></code><code class="g">()</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(int,int)">random</a></code><code class="g">(<code>int</code><code class="parameterName">minInclusive</code>, <code>int</code><code class="parameterName">maxExclusive</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(long,long)">random</a></code><code class="g">(<code>long</code><code class="parameterName">minInclusive</code>, <code>long</code><code class="parameterName">maxExclusive</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#random(double,double)">random</a></code><code class="g">(<code>double</code><code class="parameterName">minInclusive</code>, <code>double</code><code class="parameterName">maxExclusive</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#sum(hypatia.Num...)">sum</a></code><code class="g">(<code array="var"><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">nums</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Num.html#sum(java.lang.Iterable)">sum</a></code><code class="g">(<code><a aria-label="java.lang.Iterable 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html">Iterable</a><code class="parameters"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></code></code><code class="parameterName">nums</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+				</ul>
+				<h5 class="n">Methods</h5>
+				<ul>
+					<li class="T"><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(long)">create</a></code><code class="g">(<code>long</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(double)">create</a></code><code class="g">(<code>double</code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(java.lang.String)">create</a></code><code class="g">(<code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#create(java.math.BigDecimal)">create</a></code><code class="g">(<code><a aria-label="java.math.BigDecimal 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html">BigDecimal</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PROTECTED"></i><code><a href="api/hypatia.Num.html#signum()">signum</a></code><code class="g">()</code><i class="L"><code>int</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#plus(hypatia.Num)">plus</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#minus(hypatia.Num)">minus</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#multiply(hypatia.Num)">multiply</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#divide(hypatia.Num)">divide</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#remainder(hypatia.Num)">remainder</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#quotient(hypatia.Num)">quotient</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">value</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,java.util.function.DoubleBinaryOperator)">calculate</a></code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="java.util.function.DoubleBinaryOperator 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/DoubleBinaryOperator.html">DoubleBinaryOperator</a></code><code class="parameterName">calculation</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,primavera.function.DoubleTriFunction)">calculate</a></code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code>primavera.function.DoubleTriFunction</code><code class="parameterName">calculation</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoubleTetraFunction)">calculate</a></code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code>primavera.function.DoubleTetraFunction</code><code class="parameterName">calculation</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#calculate(int,hypatia.Num,hypatia.Num,hypatia.Num,hypatia.Num,primavera.function.DoublePentaFunction)">calculate</a></code><code class="g">(<code>int</code><code class="parameterName">maxScale</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param1</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param2</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param3</code>, <code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">param4</code>, <code>primavera.function.DoublePentaFunction</code><code class="parameterName">calculation</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#abs()">abs</a></code><code class="g">()</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#compareTo(hypatia.Num)">compareTo</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">o</code>)</code><i class="L"><code>int</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#ceiling(hypatia.Num)">ceiling</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#floor(hypatia.Num)">floor</a></code><code class="g">(<code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code><code class="parameterName">base</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#decuple(int)">decuple</a></code><code class="g">(<code>int</code><code class="parameterName">n</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#negate()">negate</a></code><code class="g">()</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#pow(int)">pow</a></code><code class="g">(<code>int</code><code class="parameterName">n</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#scale()">scale</a></code><code class="g">()</code><i class="L"><code>int</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#scale(int,java.math.RoundingMode)">scale</a></code><code class="g">(<code>int</code><code class="parameterName">size</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#sqrt()">sqrt</a></code><code class="g">()</code><i class="L"><code><a aria-label="hypatia.Num" href="api/hypatia.Num.html">Num</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#intValue()">intValue</a></code><code class="g">()</code><i class="L"><code>int</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#longValue()">longValue</a></code><code class="g">()</code><i class="L"><code>long</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#floatValue()">floatValue</a></code><code class="g">()</code><i class="L"><code>float</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#doubleValue()">doubleValue</a></code><code class="g">()</code><i class="L"><code>double</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#format(java.text.NumberFormat)">format</a></code><code class="g">(<code><a aria-label="java.text.NumberFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html">NumberFormat</a></code><code class="parameterName">format</code>)</code><i class="L"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#toString()">toString</a></code><code class="g">()</code><i class="L"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#hashCode()">hashCode</a></code><code class="g">()</code><i class="L"><code>int</code></i></li>
+					<li class="T"><i class="OVERRIDE PUBLIC"></i><code><a href="api/hypatia.Num.html#equals(java.lang.Object)">equals</a></code><code class="g">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">obj</code>)</code><i class="L"><code>boolean</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="p"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>

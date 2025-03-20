@@ -4,83 +4,91 @@
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
 		<meta content="Explains how to use Hypatia and its API. " name="description"/>
-		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
+		<link href="https://fonts.googleapis.com" rel="preconnect"/>
+		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
 		<title>Hypatia API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
+		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="L">
-		<header class="U">
-			<h1 class="O" date="2024-03-29" ver="1.1.0"><code>Hypatia</code></h1>
-			<nav class="i"><a href="api/"><svg class="A svg" viewBox="0 0 24 24">
+	<body class="q">
+		<header class="h" date="2024-03-29" ver="1.1.0">
+			<h1 class="e"><code>Hypatia</code></h1>
+			<nav class="i"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
 						<use href="main.svg#package"/>
-					</svg><code>API</code></a><a href="https://github.com/teletha/hypatia/discussions" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>Community</a><a href="doc/changelog.html"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#activity"/>
-					</svg>Activity</a><a href="https://github.com/teletha/hypatia" target="_blank"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#github"/>
-					</svg>Repository</a></nav>
-			<div class="Z" id="ViewMode"><a id="light" title="Change to a brighter color scheme"><svg class="A svg" viewBox="0 0 24 24">
-						<use href="main.svg#sun"/>
 					</svg>
-				</a><a id="dark" title="Change to a darker color scheme"><svg class="A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/hypatia/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+						<use href="main.svg#activity"/>
+					</svg>
+				</a><a href="https://github.com/teletha/hypatia" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+						<use href="main.svg#github"/>
+					</svg>
+				</a></nav>
+			<div class="V"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+						<use href="main.svg#sun"/>
+					</svg><svg class="moon A svg" viewBox="0 0 24 24">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<main class="b">
-			<nav class="V">
-				<div></div>
-			</nav>
-			<article class="f" id="Article">
-				<section class="P"><code class="T">hypatia</code>
-					<h2 class="Interface h"><code class="S">Orientational</code><code class="N">&#60;<code>E</code>&#62;</code></h2>
-					<div class="W">
-						<ul class="C D">
-							<li><code>E</code><code class="extends"><code><a href="api/hypatia.Orientational.html">Orientational</a></code></code></li>
-						</ul>
-					</div>
-				</section>
-				<section class="P" id="isPositive()">
-					<h2 class="J"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="S">isPositive</code><code class="N">()</code><i class="e"><code>boolean</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect the orientation.</p></span></section>
-				<section class="P" id="isNegative()">
-					<h2 class="J"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="S">isNegative</code><code class="N">()</code><i class="e"><code>boolean</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>boolean</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Detect the orientation.</p></span></section>
-				<section class="P" id="orientation()">
-					<h2 class="J"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="S">orientation</code><code class="N">()</code><i class="e"><code>E</code></i></h2>
-					<table class="H">
-						<tr class="R">
-							<td><code>E</code></td>
-							<td></td>
-						</tr>
-					</table><span class="B"><p>Get the entity.</p></span></section>
-			</article>
-			<aside class="I" id="SubNavi">
-				<div class="m">
-					<h5 class="j">Methods</h5>
-					<ul>
-						<li><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#isPositive()">isPositive</a></code><code class="N">()</code><i class="Y"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#isNegative()">isNegative</a></code><code class="N">()</code><i class="Y"><code>boolean</code></i></li>
-						<li><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#orientation()">orientation</a></code><code class="N">()</code><i class="Y"><code>E</code></i></li>
+		<nav class="R"></nav>
+		<article class="N" id="Article">
+			<section class="s"><code class="O">hypatia</code>
+				<h2 class="Interface I"><code class="j">Orientational</code><code class="g">&#60;<code>E</code>&#62;</code></h2>
+				<div class="J">
+					<ul class="C D">
+						<li><code>E</code><code class="extends"><code><a aria-label="hypatia.Orientational" href="api/hypatia.Orientational.html">Orientational</a></code></code></li>
 					</ul>
 				</div>
-			</aside>
-		</main>
-		<script src="root.js"></script>
-		<script src="main.js" type="module"></script>
+			</section>
+			<section class="s" id="isPositive()">
+				<h2 class="f"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="j">isPositive</code><code class="g">()</code><i class="l"><code>boolean</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect the orientation.</p></span></section>
+			<section class="s" id="isNegative()">
+				<h2 class="f"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="j">isNegative</code><code class="g">()</code><i class="l"><code>boolean</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>boolean</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Detect the orientation.</p></span></section>
+			<section class="s" id="orientation()">
+				<h2 class="f"><i class="DEFAULT"><i class="PUBLIC"></i></i><code class="j">orientation</code><code class="g">()</code><i class="l"><code>E</code></i></h2>
+				<table class="d">
+					<tr class="m">
+						<td><code>E</code></td>
+						<td></td>
+					</tr>
+				</table><span class="B"><p>Get the entity.</p></span></section>
+		</article>
+		<aside class="o">
+			<div class="c">
+				<h5 class="n">Methods</h5>
+				<ul>
+					<li class="T"><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#isPositive()">isPositive</a></code><code class="g">()</code><i class="L"><code>boolean</code></i></li>
+					<li class="T"><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#isNegative()">isNegative</a></code><code class="g">()</code><i class="L"><code>boolean</code></i></li>
+					<li class="T"><i class="DEFAULT"><i class="PUBLIC"></i></i><code><a href="api/hypatia.Orientational.html#orientation()">orientation</a></code><code class="g">()</code><i class="L"><code>E</code></i></li>
+				</ul>
+			</div>
+		</aside>
+		<footer class="p"/>
 	</body>
+	<script src="root.js"></script>
+	<script src="main.js" type="module"></script>
 </html>
