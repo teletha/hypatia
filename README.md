@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://docs.oracle.com/en/java/javase/23/"><img src="https://img.shields.io/badge/Java-Release%2023-green"/></a>
+    <a href="https://docs.oracle.com/en/java/javase/24/"><img src="https://img.shields.io/badge/Java-Release%2024-green"/></a>
     <span>&nbsp;</span>
     <a href="https://jitpack.io/#teletha/hypatia"><img src="https://img.shields.io/jitpack/v/github/teletha/hypatia?label=Repository&color=green"></a>
     <span>&nbsp;</span>
@@ -33,7 +33,7 @@ assert Num.of(13).divide(7).is(Num.of(1.85714285714285));
 
 
 ## Prerequisites
-Hypatia runs on all major operating systems and requires only [Java version 23](https://docs.oracle.com/en/java/javase/23/) or later to run.
+Hypatia runs on all major operating systems and requires only [Java version 24](https://docs.oracle.com/en/java/javase/24/) or later to run.
 To check, please run `java -version` on your terminal.
 <p align="right"><a href="#top">back to top</a></p>
 
@@ -117,20 +117,19 @@ If you think something might be a bug, but you're not sure, ask on StackOverflow
 
 ## Dependency
 Hypatia depends on the following products on runtime.
-* [checker-qual-3.43.0](https://mvnrepository.com/artifact/org.checkerframework/checker-qual/3.43.0)
-* [error_prone_annotations-2.28.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.28.0)
-* [failureaccess-1.0.2](https://mvnrepository.com/artifact/com.google.guava/failureaccess/1.0.2)
-* [guava-33.3.1-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.3.1-jre)
+* [error_prone_annotations-2.36.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.36.0)
+* [failureaccess-1.0.3](https://mvnrepository.com/artifact/com.google.guava/failureaccess/1.0.3)
+* [guava-33.4.5-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.4.5-jre)
 * [j2objc-annotations-3.0.0](https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations/3.0.0)
-* [jsr305-3.0.2](https://mvnrepository.com/artifact/com.google.code.findbugs/jsr305/3.0.2)
+* [jspecify-1.0.0](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.0)
 * [listenablefuture-9999.0-empty-to-avoid-conflict-with-guava](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava)
 * [primavera-1.1.0](https://mvnrepository.com/artifact/com.github.teletha/primavera/1.1.0)
-* [sinobu-4.5.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.5.0)
+* [sinobu-4.6.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.6.0)
 <p align="right"><a href="#top">back to top</a></p>
 
 
 ## License
-Copyright (C) 2024 The HYPATIA Development Team
+Copyright (C) 2025 The HYPATIA Development Team
 
 MIT License
 
