@@ -78,7 +78,7 @@ Add it into the libraryDependencies section like so:
 libraryDependencies += "com.github.teletha" % "hypatia" % "1.1.0"
 ```
 #### [Leiningen](https://leiningen.org/)
-Add JitPack repository at the end of repositories in your project.clj:
+Add JitPack repository at the end of repositories in your project().clj:
 ```clj
 :repositories [["jitpack" "https://jitpack.io"]]
 ```
@@ -119,12 +119,12 @@ If you think something might be a bug, but you're not sure, ask on StackOverflow
 Hypatia depends on the following products on runtime.
 * [error_prone_annotations-2.36.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.36.0)
 * [failureaccess-1.0.3](https://mvnrepository.com/artifact/com.google.guava/failureaccess/1.0.3)
-* [guava-33.4.5-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.4.5-jre)
+* [guava-33.4.6-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.4.6-jre)
 * [j2objc-annotations-3.0.0](https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations/3.0.0)
 * [jspecify-1.0.0](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.0)
 * [listenablefuture-9999.0-empty-to-avoid-conflict-with-guava](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava)
 * [primavera-1.1.0](https://mvnrepository.com/artifact/com.github.teletha/primavera/1.1.0)
-* [sinobu-4.6.0](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.6.0)
+* [sinobu-4.6.1](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.6.1)
 <p align="right"><a href="#top">back to top</a></p>
 
 
