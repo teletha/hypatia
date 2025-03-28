@@ -19,7 +19,7 @@ However, the internal representation is completely hidden and the user need not 
 		<dependency>
 			<groupId>com.github.teletha</groupId>
 			<artifactId>antibug</artifactId>
-			<version>1.12.2</version>
+			<version>1.13.0</version>
 			<scope>test</scope>
 			<exclusions/>
 		</dependency>
@@ -33,7 +33,7 @@ However, the internal representation is completely hidden and the user need not 
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>33.4.5-jre</version>
+			<version>33.4.6-jre</version>
 			<scope>compile</scope>
 			<exclusions/>
 		</dependency>
@@ -47,7 +47,7 @@ However, the internal representation is completely hidden and the user need not 
 		<dependency>
 			<groupId>com.github.teletha</groupId>
 			<artifactId>sinobu</artifactId>
-			<version>4.6.0</version>
+			<version>4.6.1</version>
 			<scope>compile</scope>
 			<exclusions/>
 		</dependency>
