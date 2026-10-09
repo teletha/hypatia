@@ -45,6 +45,6 @@ class ArithmeticMultiplyTest extends ArithmeticTestSupport {
 
     @ArithmeticTest
     void numberVariable(Variable<Num> one, Variable<Num> other) {
-        assert equalityVaguely(one.v.multiply(other), big(one).multiply(big(other)));
+        assert equalityVaguely(one.get().multiply(other), big(one).multiply(big(other)));
     }
 }

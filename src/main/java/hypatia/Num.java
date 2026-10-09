@@ -1066,7 +1066,7 @@ public class Num extends Arithmetic<Num> {
      * @return
      */
     public static Num min(Variable<Num> one, Num other) {
-        return min(one.v, other);
+        return min(one.get(), other);
     }
 
     /**

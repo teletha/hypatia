@@ -573,7 +573,7 @@ public abstract class Arithmetic<Self extends Arithmetic> extends Number impleme
      * @see BigDecimal#divideToIntegralValue(BigDecimal)
      */
     public final Self quotient(Variable<Self> divisor) {
-        return quotient(divisor.v);
+        return quotient(divisor.get());
     }
 
     /**

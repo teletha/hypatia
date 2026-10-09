@@ -63,9 +63,9 @@ class ArithmeticQuotientTest extends ArithmeticTestSupport {
     @ArithmeticTest
     void numberVariable(Variable<Num> one, Variable<Num> other) {
         if (!zeroIsEqualTo(other)) {
-            assert equalityVaguely(one.v.quotient(other), big(one).divideToIntegralValue(big(other)));
+            assert equalityVaguely(one.get().quotient(other), big(one).divideToIntegralValue(big(other)));
         } else {
-            Assertions.assertThrows(ArithmeticException.class, () -> one.v.quotient(other));
+            Assertions.assertThrows(ArithmeticException.class, () -> one.get().quotient(other));
         }
     }
 }

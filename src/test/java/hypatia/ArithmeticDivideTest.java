@@ -63,9 +63,9 @@ class ArithmeticDivideTest extends ArithmeticTestSupport {
     @ArithmeticTest
     void numberVariable(Variable<Num> one, Variable<Num> other) {
         if (!zeroIsEqualTo(other)) {
-            assert equalityVaguely(one.v.divide(other), big(one).divide(big(other), Num.CONTEXT));
+            assert equalityVaguely(one.get().divide(other), big(one).divide(big(other), Num.CONTEXT));
         } else {
-            Assertions.assertThrows(ArithmeticException.class, () -> one.v.divide(other));
+            Assertions.assertThrows(ArithmeticException.class, () -> one.get().divide(other));
         }
     }
 }

@@ -40,6 +40,6 @@ class ArithmeticCompareToTest extends ArithmeticTestSupport {
 
     @ArithmeticTest
     void numberVariable(Variable<Num> one, Variable<Num> other) {
-        assert one.v.compareTo(other.v) == big(one).compareTo(big(other));
+        assert one.get().compareTo(other.get()) == big(one).compareTo(big(other));
     }
 }

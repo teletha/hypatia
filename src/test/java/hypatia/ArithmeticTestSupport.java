@@ -90,7 +90,7 @@ public class ArithmeticTestSupport {
      * @return A converted value.
      */
     protected static BigDecimal big(Variable<Num> value) {
-        return big(value.v);
+        return big(value.get());
     }
 
     /**
@@ -205,7 +205,7 @@ public class ArithmeticTestSupport {
      * @return A result.
      */
     protected static boolean zeroIsEqualTo(Variable<Num> value) {
-        return zeroIsEqualTo(value.v);
+        return zeroIsEqualTo(value.get());
     }
 
     /**
@@ -265,6 +265,6 @@ public class ArithmeticTestSupport {
      * @return A result.
      */
     protected static boolean isPositive(Variable<Num> value) {
-        return isPositive(value.v);
+        return isPositive(value.get());
     }
 }

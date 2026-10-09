@@ -1,7 +1,7 @@
 <p align="center">
-    <a href="https://docs.oracle.com/en/java/javase/24/"><img src="https://img.shields.io/badge/Java-Release%2024-green"/></a>
+    <a href="https://docs.oracle.com/en/java/javase/25/"><img src="https://img.shields.io/badge/Java-Release%2025-green"/></a>
     <span>&nbsp;</span>
-    <a href="https://jitpack.io/#teletha/hypatia"><img src="https://img.shields.io/jitpack/v/github/teletha/hypatia?label=Repository&color=green"></a>
+    <a href="https://jitpack.io/#io.github.teletha/hypatia"><img src="https://img.shields.io/jitpack/version/io.github.teletha/hypatia?label=Repository&color=green"></a>
     <span>&nbsp;</span>
     <a href="https://teletha.github.io/hypatia"><img src="https://img.shields.io/website.svg?down_color=red&down_message=CLOSE&label=Official%20Site&up_color=green&up_message=OPEN&url=https%3A%2F%2Fteletha.github.io%2Fhypatia"></a>
 </p>
@@ -33,7 +33,7 @@ assert Num.of(13).divide(7).is(Num.of(1.85714285714285));
 
 
 ## Prerequisites
-Hypatia runs on all major operating systems and requires only [Java version 24](https://docs.oracle.com/en/java/javase/24/) or later to run.
+Hypatia runs on all major operating systems and requires only [Java version 25](https://docs.oracle.com/en/java/javase/25/) or later to run.
 To check, please run `java -version` on your terminal.
 <p align="right"><a href="#top">back to top</a></p>
 
@@ -50,7 +50,7 @@ Add JitPack repository at the end of repositories element in your build.xml:
 Add it into in the dependencies element like so:
 ```xml
 <dependency>
-    <groupId>com.github.teletha</groupId>
+    <groupId>io.github.teletha</groupId>
     <artifactId>hypatia</artifactId>
     <version>1.1.0</version>
 </dependency>
@@ -65,7 +65,7 @@ repositories {
 Add it into the dependencies section like so:
 ```gradle
 dependencies {
-    implementation 'com.github.teletha:hypatia:1.1.0'
+    implementation 'io.github.teletha:hypatia:1.1.0'
 }
 ```
 #### [SBT](https://www.scala-sbt.org/)
@@ -75,7 +75,7 @@ resolvers += "jitpack" at "https://jitpack.io"
 ```
 Add it into the libraryDependencies section like so:
 ```scala
-libraryDependencies += "com.github.teletha" % "hypatia" % "1.1.0"
+libraryDependencies += "io.github.teletha" % "hypatia" % "1.1.0"
 ```
 #### [Leiningen](https://leiningen.org/)
 Add JitPack repository at the end of repositories in your project().clj:
@@ -84,12 +84,12 @@ Add JitPack repository at the end of repositories in your project().clj:
 ```
 Add it into the dependencies section like so:
 ```clj
-:dependencies [[com.github.teletha/hypatia "1.1.0"]]
+:dependencies [[io.github.teletha/hypatia "1.1.0"]]
 ```
 #### [Bee](https://teletha.github.io/bee)
 Add it into your project definition class like so:
 ```java
-require("com.github.teletha", "hypatia", "1.1.0");
+require("io.github.teletha", "hypatia", "1.1.0");
 ```
 <p align="right"><a href="#top">back to top</a></p>
 
@@ -117,19 +117,19 @@ If you think something might be a bug, but you're not sure, ask on StackOverflow
 
 ## Dependency
 Hypatia depends on the following products on runtime.
-* [error_prone_annotations-2.36.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.36.0)
+* [error_prone_annotations-2.50.0](https://mvnrepository.com/artifact/com.google.errorprone/error_prone_annotations/2.50.0)
 * [failureaccess-1.0.3](https://mvnrepository.com/artifact/com.google.guava/failureaccess/1.0.3)
-* [guava-33.4.6-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.4.6-jre)
-* [j2objc-annotations-3.0.0](https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations/3.0.0)
-* [jspecify-1.0.0](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.0)
+* [guava-33.7.2-jre](https://mvnrepository.com/artifact/com.google.guava/guava/33.7.2-jre)
+* [j2objc-annotations-3.1](https://mvnrepository.com/artifact/com.google.j2objc/j2objc-annotations/3.1)
+* [jspecify-1.0.1](https://mvnrepository.com/artifact/org.jspecify/jspecify/1.0.1)
 * [listenablefuture-9999.0-empty-to-avoid-conflict-with-guava](https://mvnrepository.com/artifact/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava)
-* [primavera-1.1.0](https://mvnrepository.com/artifact/com.github.teletha/primavera/1.1.0)
-* [sinobu-4.6.1](https://mvnrepository.com/artifact/com.github.teletha/sinobu/4.6.1)
+* [primavera-1.1.1](https://mvnrepository.com/artifact/io.github.teletha/primavera/1.1.1)
+* [sinobu-4.14.0](https://mvnrepository.com/artifact/io.github.teletha/sinobu/4.14.0)
 <p align="right"><a href="#top">back to top</a></p>
 
 
 ## License
-Copyright (C) 2025 The HYPATIA Development Team
+Copyright (C) 2026 The HYPATIA Development Team
 
 MIT License
 

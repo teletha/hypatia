@@ -63,9 +63,9 @@ class ArithmeticRemainderTest extends ArithmeticTestSupport {
     @ArithmeticTest
     void numberVariable(Variable<Num> one, Variable<Num> other) {
         if (!zeroIsEqualTo(other)) {
-            assert equalityVaguely(one.v.remainder(other), big(one).remainder(big(other)));
+            assert equalityVaguely(one.get().remainder(other), big(one).remainder(big(other)));
         } else {
-            Assertions.assertThrows(ArithmeticException.class, () -> one.v.remainder(other));
+            Assertions.assertThrows(ArithmeticException.class, () -> one.get().remainder(other));
         }
     }
 }

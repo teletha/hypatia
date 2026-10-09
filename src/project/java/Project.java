@@ -12,7 +12,7 @@ import static bee.api.License.*;
 
 public class Project extends bee.api.Project {
     {
-        product("com.github.teletha", "hypatia", ref("version.txt"));
+        product("io.github.teletha", "hypatia", ref("version.txt"));
         license(MIT);
         describe("""
                 Hypatia is a library for floating-point arithmetic that can handle unchangeable, arbitrary-precision signed decimal numbers.
@@ -23,9 +23,9 @@ public class Project extends bee.api.Project {
         versionControlSystem("https://github.com/teletha/hypatia");
 
         require("com.google.guava", "guava");
-        require("com.github.teletha", "sinobu");
-        require("com.github.teletha", "primavera");
-        require("com.github.teletha", "antibug").atTest();
+        require("io.github.teletha", "sinobu");
+        require("io.github.teletha", "primavera");
+        require("io.github.teletha", "antibug").atTest();
         require("org.decimal4j", "decimal4j").atTest();
     }
 }
