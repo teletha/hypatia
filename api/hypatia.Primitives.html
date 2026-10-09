@@ -3,435 +3,437 @@
 	<head>
 		<meta charset="UTF-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport"/>
-		<meta content="Explains how to use Hypatia and its API. " name="description"/>
+		<meta content="Explains how to use Hypatia and its API. Hybrid Fast Floating Point Number" name="description"/>
 		<link href="https://cdn.jsdelivr.net" rel="preconnect"/>
 		<link href="https://fonts.googleapis.com" rel="preconnect"/>
 		<link crossorigin="null" href="https://fonts.gstatic.com" rel="preconnect"/>
-		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" rel="preload"/>
-		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Inter" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
-		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" rel="preload"/>
-		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Material+Icons" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
-		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" rel="preload"/>
-		<link href="https://fonts.googleapis.com/css2?display=swap&#38;family=Vollkorn" media="print" onload="this.media=&#39;all&#39;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Material+Icons" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Material+Icons" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
+		<link as="style" fetchpriority="high" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Vollkorn" rel="preload"/>
+		<link href="https://fonts.googleapis.com/css2?display=swap&amp;family=Vollkorn" media="print" onload="this.media=&apos;all&apos;" rel="stylesheet"/>
 		<title>Hypatia API</title>
 		<base href="../"/>
 		<script src="mimic.js" type="module"></script>
 		<link href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css" rel="stylesheet"/>
 		<link href="main.css" rel="stylesheet"/>
 	</head>
-	<body class="h">
-		<header class="Z" date="2024-03-29" ver="1.1.0">
-			<h1 class="a"><code>Hypatia</code></h1>
-			<nav class="V"><a href="api/" id="API"><svg class="package A svg" viewBox="0 0 24 24">
+	<body class="FB">
+		<header class="U" date="2026-10-09">
+			<h1 class="V"><a href="index.html"><code>Hypatia</code></a></h1>
+			<nav class="W"><a href="api/main.html" id="API"><svg class="package">
 						<use href="main.svg#package"/>
 					</svg>
-				</a><a href="https://github.com/teletha/hypatia/discussions" id="Community" target="_blank"><svg class="user A svg" viewBox="0 0 24 24">
-						<use href="main.svg#user"/>
-					</svg>
-				</a><a href="doc/changelog.html" id="Activity"><svg class="activity A svg" viewBox="0 0 24 24">
+				</a><a href="doc/changelog.html" id="Activity"><svg class="activity">
 						<use href="main.svg#activity"/>
 					</svg>
-				</a><a href="https://github.com/teletha/hypatia" id="Repository" target="_blank"><svg class="github A svg" viewBox="0 0 24 24">
+				</a><a href="https://github.com/teletha/hypatia/discussions" id="Community" target="_blank"><svg class="user">
+						<use href="main.svg#user"/>
+					</svg>
+				</a><a href="https://github.com/teletha/hypatia" id="Repository" target="_blank"><svg class="github">
 						<use href="main.svg#github"/>
 					</svg>
 				</a></nav>
-			<div class="Y"><a aria-label="Change color scheme" id="theme"><svg class="sun A svg" viewBox="0 0 24 24">
+			<div class="X"><a aria-label="Change color scheme" id="theme"><svg class="sun">
 						<use href="main.svg#sun"/>
-					</svg><svg class="moon A svg" viewBox="0 0 24 24">
+					</svg><svg class="moon">
 						<use href="main.svg#moon"/>
 					</svg>
 				</a></div>
 		</header>
-		<nav class="f"></nav>
-		<article class="i" id="Article">
-			<section class="P"><code class="W">hypatia</code>
-				<h2 class="Class q"><code class="k">Primitives</code></h2>
-				<div class="N"></div>
+		<nav class="P"></nav>
+		<article class="m" id="Article">
+			<section class="a"><code class="KB">hypatia</code>
+				<h2 class="Class LB"><code class="r">Primitives</code></h2>
+				<div class="K"></div>
 			</section>
-			<section class="P" id="DecimalScale2">
-				<h2 class="R"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code class="k">DecimalScale2</code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="B"><p>Fix decimal point(2).</p></span></section>
-			<section class="P" id="DecimalScale4">
-				<h2 class="R"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code class="k">DecimalScale4</code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="B"><p>Fix decimal point(4).</p></span></section>
-			<section class="P" id="DecimalScale6">
-				<h2 class="R"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code class="k">DecimalScale6</code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="B"><p>Fix decimal point(6).</p></span></section>
-			<section class="P" id="Primitives()">
-				<h2 class="R"><i class="PUBLIC"></i><code class="k">Primitives</code><code class="T">()</code></h2>
+			<section class="a" id="DecimalScale2">
+				<h2 class="x"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="r">DecimalScale2</code><i class="Y"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="A"><p>Fix decimal point(2).</p></span></section>
+			<section class="a" id="DecimalScale4">
+				<h2 class="x"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="r">DecimalScale4</code><i class="Y"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="A"><p>Fix decimal point(4).</p></span></section>
+			<section class="a" id="DecimalScale6">
+				<h2 class="x"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code class="r">DecimalScale6</code><i class="Y"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></h2><span class="A"><p>Fix decimal point(6).</p></span></section>
+			<section class="a" id="Primitives()">
+				<h2 class="x"><i class="PUBLIC"></i><code class="r">Primitives</code><code class="AB">()</code></h2>
 			</section>
-			<section class="P" id="roundDecimal(double,int)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">roundDecimal</code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="j"><code>double</code></i></h2>
-				<table class="S">
-					<tr class="p">
+			<section class="a" id="roundDecimal(double,int)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">roundDecimal</code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="Y"><code>double</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">scale</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>double</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Round to the specified decimal place.</p></span></section>
-			<section class="P" id="roundDecimal(double,int,java.math.RoundingMode)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">roundDecimal</code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="j"><code>double</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Round to the specified decimal place.</p></span></section>
+			<section class="a" id="roundDecimal(double,int,java.math.RoundingMode)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">roundDecimal</code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="Y"><code>double</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">scale</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
-						<td><code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code></td>
+					<tr class="i">
+						<td><code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>double</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Round to the specified decimal place.</p></span></section>
-			<section class="P" id="roundString(double,int)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">roundString</code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Round to the specified decimal place.</p></span></section>
+			<section class="a" id="roundString(double,int)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">roundString</code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="Y"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value to round.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">scale</code></td>
 						<td><span><p>A required scale.</p></span></td>
 					</tr>
-					<tr class="O">
-						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+					<tr class="HB">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></td>
 						<td><span><p>A rounded value as string expression.</p></span></td>
 					</tr>
-				</table><span class="B"><p>Round to the specified decimal place.</p></span></section>
-			<section class="P" id="roundString(double,int,java.math.RoundingMode)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">roundString</code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Round to the specified decimal place.</p></span></section>
+			<section class="a" id="roundString(double,int,java.math.RoundingMode)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">roundString</code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="Y"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value to round.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">scale</code></td>
 						<td><span><p>A required scale.</p></span></td>
 					</tr>
-					<tr class="p">
-						<td><code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code></td>
+					<tr class="i">
+						<td><code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
-						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+					<tr class="HB">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></td>
 						<td><span><p>A rounded value as string expression.</p></span></td>
 					</tr>
-				</table><span class="B"><p>Round to the specified decimal place.</p></span></section>
-			<section class="P" id="equals(double,double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">equals</code><code class="T">(<code>double</code><code class="parameterName">value1</code>, <code>double</code><code class="parameterName">value2</code>, <code>double</code><code class="parameterName">delta</code>)</code><i class="j"><code>boolean</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Round to the specified decimal place.</p></span></section>
+			<section class="a" id="equals(double,double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">equals</code><code class="AB">(<code>double</code><code class="parameterName">value1</code>, <code>double</code><code class="parameterName">value2</code>, <code>double</code><code class="parameterName">delta</code>)</code><i class="Y"><code>boolean</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value1</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value2</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">delta</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>boolean</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Check equality for primitive doubles.</p></span></section>
-			<section class="P" id="round(int,int,int)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">round</code><code class="T">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="j"><code>int</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Check equality for primitive doubles.</p></span></section>
+			<section class="a" id="round(int,int,int)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">round</code><code class="AB">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="Y"><code>int</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>int</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Rounds the specified value to the range of valid values.</p></span></section>
-			<section class="P" id="round(long,long,long)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">round</code><code class="T">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="j"><code>long</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Rounds the specified value to the range of valid values.</p></span></section>
+			<section class="a" id="round(long,long,long)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">round</code><code class="AB">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="Y"><code>long</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>long</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Rounds the specified value to the range of valid values.</p></span></section>
-			<section class="P" id="round(double,double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">round</code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>double</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Rounds the specified value to the range of valid values.</p></span></section>
+			<section class="a" id="round(double,double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">round</code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="Y"><code>double</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>double</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Rounds the specified value to the range of valid values.</p></span></section>
-			<section class="P" id="within(int,int,int)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">within</code><code class="T">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Rounds the specified value to the range of valid values.</p></span></section>
+			<section class="a" id="within(int,int,int)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">within</code><code class="AB">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="Y"><code>boolean</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>int</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>boolean</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Checks if the specified value is in the range of valid values.</p></span></section>
-			<section class="P" id="within(long,long,long)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">within</code><code class="T">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Checks if the specified value is in the range of valid values.</p></span></section>
+			<section class="a" id="within(long,long,long)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">within</code><code class="AB">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="Y"><code>boolean</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>long</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>boolean</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Checks if the specified value is in the range of valid values.</p></span></section>
-			<section class="P" id="within(double,double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">within</code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Checks if the specified value is in the range of valid values.</p></span></section>
+			<section class="a" id="within(double,double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">within</code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="Y"><code>boolean</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>boolean</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Checks if the specified value is in the range of valid values.</p></span></section>
-			<section class="P" id="between(double,double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">between</code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>double</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Checks if the specified value is in the range of valid values.</p></span></section>
+			<section class="a" id="between(double,double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">between</code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="Y"><code>double</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">min</code></td>
 						<td><span><p>A minimum value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">value</code></td>
 						<td><span><p>A target value.</p></span></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">max</code></td>
 						<td><span><p>A maximum value.</p></span></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>double</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Checks if the specified value is in the range of valid values.</p></span></section>
-			<section class="P" id="max(int...)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">max</code><code class="T">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="j"><code>int</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Checks if the specified value is in the range of valid values.</p></span></section>
+			<section class="a" id="max(int...)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">max</code><code class="AB">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="Y"><code>int</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code array="var">int</code><code class="parameterName">values</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>int</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Compute the maximum value.</p></span></section>
-			<section class="P" id="max(long...)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">max</code><code class="T">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="j"><code>long</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Compute the maximum value.</p></span></section>
+			<section class="a" id="max(long...)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">max</code><code class="AB">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="Y"><code>long</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code array="var">long</code><code class="parameterName">values</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>long</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Compute the maximum value.</p></span></section>
-			<section class="P" id="min(int...)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">min</code><code class="T">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="j"><code>int</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Compute the maximum value.</p></span></section>
+			<section class="a" id="min(int...)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">min</code><code class="AB">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="Y"><code>int</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code array="var">int</code><code class="parameterName">values</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>int</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Compute the minimum value.</p></span></section>
-			<section class="P" id="min(long...)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">min</code><code class="T">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="j"><code>long</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Compute the minimum value.</p></span></section>
+			<section class="a" id="min(long...)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">min</code><code class="AB">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="Y"><code>long</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code array="var">long</code><code class="parameterName">values</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>long</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Compute the minimum value.</p></span></section>
-			<section class="P" id="ratio(double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">ratio</code><code class="T">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="j"><code>double</code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Compute the minimum value.</p></span></section>
+			<section class="a" id="ratio(double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">ratio</code><code class="AB">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="Y"><code>double</code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">numerator</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">denominator</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>double</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Claculate ratio.</p></span></section>
-			<section class="P" id="percent(double,double)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">percent</code><code class="T">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
-				<table class="S">
-					<tr class="p">
+				</table><span class="A"><p>Claculate ratio.</p></span></section>
+			<section class="a" id="percent(double,double)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">percent</code><code class="AB">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="Y"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></h2>
+				<table class="O">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">numerator</code></td>
 						<td></td>
 					</tr>
-					<tr class="p">
+					<tr class="i">
 						<td><code>double</code><code class="parameterName">denominator</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
-						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></td>
+					<tr class="HB">
+						<td><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Claculate ratio.</p></span></section>
-			<section class="P" id="ensureLong(java.lang.Object)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">ensureLong</code><code class="T">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="j"><code>long</code></i></h2>
-				<table class="S">
-					<tr class="p">
-						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code></td>
+				</table><span class="A"><p>Claculate ratio.</p></span></section>
+			<section class="a" id="ensureLong(java.lang.Object)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">ensureLong</code><code class="AB">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="Y"><code>long</code></i></h2>
+				<table class="O">
+					<tr class="i">
+						<td><code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>long</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Ensure that the specified value is long like value.</p></span></section>
-			<section class="P" id="ensureLong(java.lang.Long)">
-				<h2 class="R"><i class="STATIC PUBLIC"></i><code class="k">ensureLong</code><code class="T">(<code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code>)</code><i class="j"><code>long</code></i></h2>
-				<table class="S">
-					<tr class="p">
-						<td><code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code></td>
+				</table><span class="A"><p>Ensure that the specified value is long like value.</p></span></section>
+			<section class="a" id="ensureLong(java.lang.Long)">
+				<h2 class="x"><i class="PUBLIC STATIC"></i><code class="r">ensureLong</code><code class="AB">(<code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code>)</code><i class="Y"><code>long</code></i></h2>
+				<table class="O">
+					<tr class="i">
+						<td><code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code></td>
 						<td></td>
 					</tr>
-					<tr class="O">
+					<tr class="HB">
 						<td><code>long</code></td>
 						<td></td>
 					</tr>
-				</table><span class="B"><p>Ensure that the specified value is long like value.</p></span></section>
+				</table><span class="A"><p>Ensure that the specified value is long like value.</p></span></section>
 		</article>
-		<aside class="J">
-			<div class="d">
-				<h5 class="X">Constructors</h5>
+		<aside class="n">
+			<div class="N">
+				<h5 class="IB">Constructors</h5>
 				<ul>
-					<li class="U"><i class="PUBLIC"></i><code><a href="api/hypatia.Primitives.html#Primitives()">Primitives</a></code><code class="T">()</code></li>
+					<li class="T"><i class="PUBLIC"></i><code><a href="api/hypatia.Primitives.html#Primitives()">Primitives</a></code><code class="AB">()</code></li>
 				</ul>
-				<h5 class="X">Static Fields</h5>
+				<h5 class="IB">Static Fields</h5>
 				<ul>
-					<li class="U"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale2">DecimalScale2</a></code><i class="b"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
-					<li class="U"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale4">DecimalScale4</a></code><i class="b"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
-					<li class="U"><i class="FINAL"><i class="STATIC PUBLIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale6">DecimalScale6</a></code><i class="b"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale2">DecimalScale2</a></code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale4">DecimalScale4</a></code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
+					<li class="T"><i class="FINAL"><i class="PUBLIC STATIC"></i></i><code><a href="api/hypatia.Primitives.html#DecimalScale6">DecimalScale6</a></code><i class="j"><code class="return"><a aria-label="java.text.DecimalFormat 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/text/DecimalFormat.html">DecimalFormat</a></code></i></li>
 				</ul>
-				<h5 class="X">Static Methods</h5>
+				<h5 class="IB">Static Methods</h5>
 				<ul>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#roundDecimal(double,int)">roundDecimal</a></code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="b"><code>double</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#roundDecimal(double,int,java.math.RoundingMode)">roundDecimal</a></code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="b"><code>double</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#roundString(double,int)">roundString</a></code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="b"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#roundString(double,int,java.math.RoundingMode)">roundString</a></code><code class="T">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="b"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#equals(double,double,double)">equals</a></code><code class="T">(<code>double</code><code class="parameterName">value1</code>, <code>double</code><code class="parameterName">value2</code>, <code>double</code><code class="parameterName">delta</code>)</code><i class="b"><code>boolean</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#round(int,int,int)">round</a></code><code class="T">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="b"><code>int</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#round(long,long,long)">round</a></code><code class="T">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="b"><code>long</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#round(double,double,double)">round</a></code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="b"><code>double</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#within(int,int,int)">within</a></code><code class="T">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="b"><code>boolean</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#within(long,long,long)">within</a></code><code class="T">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="b"><code>boolean</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#within(double,double,double)">within</a></code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="b"><code>boolean</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#between(double,double,double)">between</a></code><code class="T">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="b"><code>double</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#max(int...)">max</a></code><code class="T">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="b"><code>int</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#max(long...)">max</a></code><code class="T">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="b"><code>long</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#min(int...)">min</a></code><code class="T">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="b"><code>int</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#min(long...)">min</a></code><code class="T">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="b"><code>long</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#ratio(double,double)">ratio</a></code><code class="T">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="b"><code>double</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#percent(double,double)">percent</a></code><code class="T">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="b"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#ensureLong(java.lang.Object)">ensureLong</a></code><code class="T">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="b"><code>long</code></i></li>
-					<li class="U"><i class="STATIC PUBLIC"></i><code><a href="api/hypatia.Primitives.html#ensureLong(java.lang.Long)">ensureLong</a></code><code class="T">(<code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code>)</code><i class="b"><code>long</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#roundDecimal(double,int)">roundDecimal</a></code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="j"><code>double</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#roundDecimal(double,int,java.math.RoundingMode)">roundDecimal</a></code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="j"><code>double</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#roundString(double,int)">roundString</a></code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#roundString(double,int,java.math.RoundingMode)">roundString</a></code><code class="AB">(<code>double</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">scale</code>, <code><a aria-label="java.math.RoundingMode 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/math/RoundingMode.html">RoundingMode</a></code><code class="parameterName">mode</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#equals(double,double,double)">equals</a></code><code class="AB">(<code>double</code><code class="parameterName">value1</code>, <code>double</code><code class="parameterName">value2</code>, <code>double</code><code class="parameterName">delta</code>)</code><i class="j"><code>boolean</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#round(int,int,int)">round</a></code><code class="AB">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="j"><code>int</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#round(long,long,long)">round</a></code><code class="AB">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="j"><code>long</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#round(double,double,double)">round</a></code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>double</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#within(int,int,int)">within</a></code><code class="AB">(<code>int</code><code class="parameterName">min</code>, <code>int</code><code class="parameterName">value</code>, <code>int</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#within(long,long,long)">within</a></code><code class="AB">(<code>long</code><code class="parameterName">min</code>, <code>long</code><code class="parameterName">value</code>, <code>long</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#within(double,double,double)">within</a></code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>boolean</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#between(double,double,double)">between</a></code><code class="AB">(<code>double</code><code class="parameterName">min</code>, <code>double</code><code class="parameterName">value</code>, <code>double</code><code class="parameterName">max</code>)</code><i class="j"><code>double</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#max(int...)">max</a></code><code class="AB">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="j"><code>int</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#max(long...)">max</a></code><code class="AB">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="j"><code>long</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#min(int...)">min</a></code><code class="AB">(<code array="var">int</code><code class="parameterName">values</code>)</code><i class="j"><code>int</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#min(long...)">min</a></code><code class="AB">(<code array="var">long</code><code class="parameterName">values</code>)</code><i class="j"><code>long</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#ratio(double,double)">ratio</a></code><code class="AB">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="j"><code>double</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#percent(double,double)">percent</a></code><code class="AB">(<code>double</code><code class="parameterName">numerator</code>, <code>double</code><code class="parameterName">denominator</code>)</code><i class="j"><code><a aria-label="java.lang.String 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/String.html">String</a></code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#ensureLong(java.lang.Object)">ensureLong</a></code><code class="AB">(<code><a aria-label="java.lang.Object 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Object.html">Object</a></code><code class="parameterName">value</code>)</code><i class="j"><code>long</code></i></li>
+					<li class="T"><i class="PUBLIC STATIC"></i><code><a href="api/hypatia.Primitives.html#ensureLong(java.lang.Long)">ensureLong</a></code><code class="AB">(<code><a aria-label="java.lang.Long 🚀" href="https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/lang/Long.html">Long</a></code><code class="parameterName">value</code>)</code><i class="j"><code>long</code></i></li>
 				</ul>
 			</div>
 		</aside>
-		<footer class="r"/>
+		<footer class="e">
+			<p>Powered by <a href="https://github.com/teletha/evergarden" target="_">Evergarden</a></p>
+		</footer>
 	</body>
 	<script src="root.js"></script>
 	<script src="main.js" type="module"></script>
